@@ -3,6 +3,9 @@
 $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
+    case '' :
+        require __DIR__ . '/index.php';
+        break;
     case '/privacy-policy' :
         require __DIR__ . '/privacy-policy.php';
         break;
